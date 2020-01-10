@@ -21,6 +21,8 @@
             <i class="fas fa-home"></i>  <%= t(".home", default: "Home") %>
           <% end %>
         </li>
+        <li><%= link_to image_tag('flag-fr.png'), url_for(locale: 'fr') %></li>
+        <li><%= link_to image_tag('flag-en.png'), url_for(locale: 'en') %></li>
       </ul>
     </div>
   </div>
