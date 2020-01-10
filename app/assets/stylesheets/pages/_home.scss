@@ -1,1 +1,76 @@
 // Specific CSS for your home-page
+.container-home {
+  background-image: url("https://res.cloudinary.com/bessiere/image/upload/v1578392181/404-background_rebmed.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.title-home {
+  padding-top: 100px;
+  text-align: center;
+  color: #F1D15B;
+}
+
+.link-home {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #F1D15B;
+  color: #F1D15B;
+  animation-name: home;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes home {
+  0% { width: 56px; background-color: #F1D15B; font-size: 0px; height: 56px;}
+  80% { width: 250px; background-color: #F1D15B; font-size: 8px;}
+  90% { width: 300px; background-color: transparent; font-size: 16px;}
+  99% { width: 300px; background-color: transparent; font-size: 20px; font-weight: 500; height: 56px;}
+  100% { width: 300px; background-color: transparent; font-size: 21px; font-weight: 900; height: 56px;}
+}
+
+.coordinate {
+  display:flex;
+}
+.address,
+.phone {
+  display: flex;
+  color: #F1D15B;
+  position: absolute;
+  bottom: 10px;
+}
+.address {
+
+  animation-name: address;
+  animation-duration: .6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.phone {
+
+  animation-name: phone;
+  animation-duration: .6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes address {
+  0% {left: -300px;}
+  50% {left: 30px; font-size: 16px;}
+  75% {left: 30px; font-size: 19px;}
+  100% {left: 30px; font-size: 16px;}
+
+}
+@keyframes phone {
+  0% {right: -300px;}
+  50% {right: 30px; font-size: 16px;}
+  75% {right: 30px; font-size: 19px;}
+  100% {right: 30px; font-size: 16px;}
+}

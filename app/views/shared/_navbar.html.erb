@@ -1,13 +1,27 @@
-<div class="navbar navbar-lewagon">
+<div class="navbar navbar-sample">
   <div class="navbar-logo">
-    <%= link_to "B", root_path, class:"navbar-brand" %>
+
+    <%= link_to root_path do %>
+      <%= image_tag "https://res.cloudinary.com/bessiere/image/upload/v1513643323/logo.png" %>
+    <% end %>
+
   </div>
-  <div class="navbar-links dropdown">
-    <i class="fas fa-angle-down fa-3x dropdown-toggle" data-toggle="dropdown"></i>
-    <ul class="dropdown-menu dropdown-menu-right navbar-lewagon-dropdown-menu">
-      <li><%= link_to "PORTFOLIO", flip_path, class: "nav-link" %></li>
-      <li><%= link_to "COLLECTIONS", collections_path, class: "nav-link" %></li>
-      <li><%= link_to "ANIMATIONS", animations_path, class: "nav-link" %></li>
-    </ul>
+  <div class="navbar-brand">
+    Benoît Bessière
+  </div>
+  <div class="navbar-links">
+    <div class="dropdown">
+
+      <i class="fas fa-plus-circle fa-3x" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+
+
+      <ul class="dropdown-menu dropdown-menu-right navbar-sample-dropdown-menu">
+        <li>
+          <%= link_to root_path do %>
+            <i class="fas fa-home"></i>  <%= t(".home", default: "Home") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
