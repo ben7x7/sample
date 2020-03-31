@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  background: -moz-linear-gradient(45deg,  #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+  background: -webkit-linear-gradient(45deg,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+  background: linear-gradient(45deg,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+}
+
+.portfolio {
+  color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42;
+
+}
+
+p:nth-child(2) {
+  color: green !important;
+}
+
+p:nth-child(6) {
+  color: transparent !important;
+}

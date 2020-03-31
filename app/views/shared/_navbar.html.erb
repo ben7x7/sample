@@ -1,29 +1,34 @@
-<div class="navbar navbar-sample">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="navbar-logo">
-
     <%= link_to root_path do %>
-      <%= image_tag "https://res.cloudinary.com/bessiere/image/upload/v1513643323/logo.png" %>
+      <%= image_tag ('logo.png'), height: 40 %>
     <% end %>
-
   </div>
-  <div class="navbar-brand">
-    Benoît Bessière
-  </div>
-  <div class="navbar-links">
-    <div class="dropdown">
-
-      <i class="fas fa-plus-circle fa-3x" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-
-
-      <ul class="dropdown-menu dropdown-menu-right navbar-sample-dropdown-menu">
-        <li>
-          <%= link_to root_path do %>
-            <i class="fas fa-home"></i>  <%= t(".home", default: "Home") %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav text-center">
+      <li class="nav-item active mr-4">
+        <%= link_to root_path do %>
+            <i class="fas fa-home"></i><br>  <%= t(".home", default: "Home") %>
           <% end %>
-        </li>
-        <li><%= link_to image_tag('flag-fr.png'), url_for(locale: 'fr') %></li>
-        <li><%= link_to image_tag('flag-en.png'), url_for(locale: 'en') %></li>
-      </ul>
-    </div>
+      </li>
+      <li class="nav-item mr-4">
+        <%= link_to about_path do %>
+            <i class="far fa-user"></i><br>  <%= t(".about", default: "About") %>
+          <% end %>
+      </li>
+      <li class="nav-item mr-4">
+        <%= link_to portfolio_path do %>
+            <i class="far fa-file"></i><br>  <%= t(".portfolio", default: "Portfolio") %>
+          <% end %>
+      </li>
+      <li class="nav-item mr-4">
+        <%= link_to contact_path do %>
+            <i class="far fa-envelope"></i><br>  <%= t(".contact", default: "Contact") %>
+          <% end %>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>

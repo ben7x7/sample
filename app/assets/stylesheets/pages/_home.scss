@@ -2,7 +2,7 @@
 .container-home {
   background-image: url("https://res.cloudinary.com/bessiere/image/upload/v1578392181/404-background_rebmed.png");
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   position: relative;
 }
@@ -41,36 +41,44 @@
 .address,
 .phone {
   display: flex;
-  color: #F1D15B;
+  color: transparent;
   position: absolute;
   bottom: 10px;
 }
 .address {
-
+  left: 20px;
   animation-name: address;
-  animation-duration: .6s;
+  animation-duration: .8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-.phone {
 
+.icon-left,
+.icon-right {
+  margin-right: 10px;
+}
+
+.phone {
+  right: 20px;
   animation-name: phone;
-  animation-duration: .6s;
+  animation-duration: .8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
 
 @keyframes address {
-  0% {left: -300px;}
-  50% {left: 30px; font-size: 16px;}
-  75% {left: 30px; font-size: 19px;}
-  100% {left: 30px; font-size: 16px;}
+  0% {left: -300px; color: transparent;}
+  25% {left: -250; color: #F1D15B;}
+  50% {left: 30px; color: #F1D15B; font-size: 16px;}
+  75% {left: 30px; color: #F1D15B; font-size: 20px;}
+  100% {left: 30px; color: #F1D15B; font-size: 16px;}
 
 }
 @keyframes phone {
-  0% {right: -300px;}
-  50% {right: 30px; font-size: 16px;}
-  75% {right: 30px; font-size: 19px;}
-  100% {right: 30px; font-size: 16px;}
+  0% {right: -300px; color: transparent;}
+  25% {right: -250px; color: #F1D15B;}
+  50% {right: 30px; color: #F1D15B; font-size: 16px;}
+  75% {right: 30px; color: #F1D15B; font-size: 20px;}
+  100% {right: 30px; color: #F1D15B; font-size: 16px;}
 }
