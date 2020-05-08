@@ -18,3 +18,7 @@ require("channels")
 
 import  { playMemory } from '../components/memory.js';
 playMemory();
+
+// import  { playShifumi } from '../components/shifumi.js';
+// playShifumi();
+
