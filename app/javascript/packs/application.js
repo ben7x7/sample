@@ -7,9 +7,14 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
+// ********************************************************3
+// To get the path length of each letter - check the console.log
+// **********************************************************
+// const developper = document.querySelectorAll('#developper path');
 
-const developper = document.querySelectorAll('#developper path');
+// for(let i = 0; i < developper.length; i++){
+//   console.log(`Letter ${i} is ${developper[i].getTotalLength()}`);
+// }
 
-for(let i = 0; i < developper.length; i++){
-  console.log(`Letter ${i} is ${developper[i].getTotalLength()}`);
-}
+import  { playMemory } from '../components/memory.js';
+playMemory();
