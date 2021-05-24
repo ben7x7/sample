@@ -9,6 +9,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "3.5.1",
     "popper.js": "^1.16.0",
+    "postcss": "^8.2.10",
     "ssri": "^8.0.1",
     "turbolinks": "^5.2.0"
   },
