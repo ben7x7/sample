@@ -14,7 +14,8 @@
     "postcss": "^8.2.10",
     "ssri": "^8.0.1",
     "turbolinks": "^5.2.0",
-    "uuid": "7"
+    "uuid": "7",
+    "ws": "^7.4.6"
   },
   "version": "0.1.0",
   "devDependencies": {
