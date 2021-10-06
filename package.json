@@ -13,6 +13,7 @@
     "normalize-url": "^4.5.1",
     "popper.js": "^1.16.0",
     "postcss": "^8.2.10",
+    "set-value": "^4.0.1",
     "ssri": "^8.0.1",
     "svgo": "^2.7",
     "tar": "^4.4.18",
