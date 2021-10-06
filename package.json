@@ -14,6 +14,7 @@
     "popper.js": "^1.16.0",
     "postcss": "^8.2.10",
     "ssri": "^8.0.1",
+    "svgo": "^2.7",
     "trim-newlines": "^3.0.1",
     "turbolinks": "^5.2.0",
     "uuid": "7",
